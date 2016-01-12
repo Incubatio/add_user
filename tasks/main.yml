@@ -1,0 +1,9 @@
+---
+- name: create group
+  group: name={{ install_group }}
+
+- name: create user
+  user: name={{ install_user }} group={{ install_group }}
+
+- name: add public key to server
+  authorized_key: user={{ install_user }} key="{{ ssh_public_key }}"
