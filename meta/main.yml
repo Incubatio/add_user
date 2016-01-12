@@ -1,0 +1,16 @@
+---
+galaxy_info:
+  author: Incubatio
+  description: ansible role to add a user, a group and local-machine public key to remote authorized_keys
+  min_ansible_version: 1.9.3
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+  categories:
+    - system
+
+dependencies: []
